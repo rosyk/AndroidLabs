@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="main_activity_choose">Choose activity you want to go:</string>
+    <string name="button_activity_1">Linear layout</string>
+    <string name="button_activity_2">Relative layout</string>
+    <string name="linear_activity_text">This is linear layout</string>
+    <string name="email">email:</string>
+    <string name="password">password:</string>
+    <string name="done">done</string>
+    <string name="back">back</string>
+    <string name="relative_layout_text">This is relative layout</string>
+</resources>
