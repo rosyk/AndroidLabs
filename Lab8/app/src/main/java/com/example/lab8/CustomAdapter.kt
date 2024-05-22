@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 class CustomAdapter(private val names: List<ItemModel>, private val onItemClick: (position: Int)->Unit): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
@@ -34,6 +35,7 @@ class CustomAdapter(private val names: List<ItemModel>, private val onItemClick:
         holder.textView.text = ItemModel.name
         Glide.with(holder.itemView.context)
             .load(ItemModel.image)
+//            .apply(RequestOptions().override(600, 20))
             .error(R.drawable.ic_launcher_background)
             .into(holder.imageView)
     }
